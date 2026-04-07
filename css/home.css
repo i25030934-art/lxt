@@ -1,0 +1,439 @@
+
+.l-intro {
+  width: 1200px;
+  display: flex;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.l-intro img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.l-intro div {
+  flex: 1;
+  margin: 20px 50px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  background-color: #fefbf5;
+  position: relative;
+}
+
+.l-intro div img {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.l-intro div h5 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.l-intro div p {
+  font-size: 20px;
+  text-indent: 1em;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.cate {
+  width: 1200px;
+  margin: 40px auto;
+}
+
+.cate a {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cate a:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.cate a:hover img {
+  transform: scale(1.2);
+}
+
+.cate img {
+  width: 19.5%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  transition: all .5s ease-out;
+}
+
+.l-you {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.l-you .title {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 0;
+}
+
+.l-you .title img {
+  height: 100px;
+}
+
+.l-you .y-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.l-you .scenic-item {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.l-you .scenic-item img {
+  width: 100%;
+  height: 260px;
+  border-radius: 4px;
+}
+
+.l-you .scenic-item p {
+  background-color: #f8f5e6;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  flex: 1;
+  padding: 15px;
+}
+
+.l-you .more-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.l-you .more-btn img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+.l-you .more-btn a {
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.l-list {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.l-list a>img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.l-list a:hover {
+  text-decoration: none;
+  color: #fed073;
+}
+
+.l-list a>p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tab-section {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.tab-header {
+  display: flex;
+  border-bottom: 2px solid #e8d4a0;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #999;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.tab-btn:hover {
+  color: #5a4a2a;
+}
+
+.tab-btn.active {
+  color: #8B6914;
+  border-bottom-color: #e8c864;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: tabFadeIn 0.4s ease;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tab-card {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.tab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tab-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.tab-card:hover img {
+  transform: scale(1.06);
+}
+
+.tab-card-info {
+  padding: 16px;
+}
+
+.tab-card-info h4 {
+  font-size: 16px;
+  color: #5a4a2a;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.tab-card-info p {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .l-intro {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .l-intro img {
+    width: 80%;
+    height: 280px;
+  }
+
+  .l-intro div {
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .l-intro div img {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .l-intro div h5 {
+    font-size: 24px;
+  }
+
+  .l-intro div p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .cate {
+    width: 90%;
+  }
+
+  .cate img {
+    width: 100%;
+  }
+
+  .l-you {
+    width: 90%;
+  }
+
+  .l-you .y-list {
+    grid-template-columns: 1fr;
+  }
+
+  .l-you .scenic-item img {
+    height: 300px;
+  }
+
+  .l-list {
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .l-list a>img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+  .tab-section {
+    width: 70%;
+  }
+
+  .tab-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .tab-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+
+@media (max-width: 768px) {
+  .l-intro img {
+    height: 220px;
+  }
+
+  .l-intro div h5 {
+    font-size: 20px;
+  }
+
+  .l-intro div p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .cate {
+    width: 95%;
+  }
+
+  .cate img {
+    padding: 5px;
+  }
+
+  .l-list a>img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .l-list a>p {
+    font-size: 16px;
+  }
+
+  .l-you .scenic-item img {
+    height: 250px;
+  }
+
+  .l-you .scenic-item p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .l-intro img {
+    height: 180px;
+  }
+
+  .l-intro div {
+    padding: 15px;
+  }
+
+  .l-intro div h5 {
+    font-size: 18px;
+  }
+
+  .l-intro div p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .l-list {
+    gap: 10px;
+  }
+
+  .l-list a>img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .l-list a>p {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .l-you .scenic-item img {
+    height: 200px;
+  }
+
+  .tab-section {
+    width: 95%;
+  }
+
+  .tab-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .tab-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .tab-card img {
+    height: auto;
+  }
+
+  .tab-card-info {
+    padding: 12px;
+  }
+
+  .tab-card-info h4 {
+    font-size: 15px;
+  }
+
+  .tab-card-info p {
+    font-size: 12px;
+  }
+}

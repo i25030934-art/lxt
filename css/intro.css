@@ -1,0 +1,389 @@
+.l-mei {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.t-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.t-title img {
+  height: 100px;
+}
+
+.l-mei ul {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.l-mei ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l-mei ul li img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.l-mei ul li a {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.l-mei ul li a:hover {
+  font-weight: 600;
+  color: #000;
+}
+
+.l-mei .m-intro {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.l-mei .m-intro img {
+  width: 200px;
+  height: 200px;
+}
+
+.l-mei .m-intro p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.l-mei .m-intro a {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.l-zhu {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.l-zhu .t-title {
+  justify-content: flex-end;
+}
+
+.l-zhu>.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.z-list img {
+  width: 200px;
+}
+
+.z-list .list1 {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  position: relative;
+}
+.list1>img{
+  height: 260px;
+}
+.z-list .list1 .y-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 125px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);
+}
+
+.z-list>div .t {
+  display: flex;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.z-list>div .t span {
+  background: #e5dbc4;
+  height: 36px;
+  line-height: 36px;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.z-list>div .i {
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 20px;
+  text-indent: 2em;
+}
+
+.z-list {
+  position: relative;
+}
+
+.z-list .z-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.z-list .z-btn img {
+  width: 120px;
+}
+
+.z-list .z-btn a {
+  font-size: 18px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.l-xing {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.l-xing .t-title {
+  margin: 40px 0;
+}
+
+.l-xing p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.l-xing .l-maps {
+  display: flex;
+}
+
+.l-xing .l-maps div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.l-xing .l-maps div h5 {
+  text-align: center;
+}
+
+.l-xing .l-maps div p {
+  margin-bottom: 0;
+}
+
+.l-xing .l-maps img {
+  height: 400px;
+  margin-top: -200px;
+}
+
+.l-piao {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.l-piao .t-title {
+  justify-content: flex-end;
+}
+
+.p-list>p {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: #ece7be;
+}
+
+.p-list>ul {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.p-list>ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.p-list>ul li img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.p-list>ul li p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.p-list>div {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.p-list>a {
+  display: block;
+  padding: 5px 10px;
+  background-color: #ece7be;
+  font-weight: 600;
+  width: 200px;
+  margin: 20px auto 40px;
+  text-align: center;
+}
+
+.l-you {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.l-you .title {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 0;
+}
+
+.l-you .title img {
+  height: 100px;
+}
+
+.l-you .y-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.l-you .scenic-item {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.l-you .scenic-item img {
+  width: 100%;
+  height: 460px;
+  border-radius: 4px;
+}
+
+.l-you .scenic-item p {
+  background-color: #f8f5e6;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  flex: 1;
+  padding: 15px;
+}
+
+.l-you .more-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.l-you .more-btn img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+.l-you .more-btn a {
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .l-mei {
+    width: 90%;
+  }
+
+  .l-mei ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .l-zhu, .l-xing, .l-piao {
+    width: 90%;
+  }
+
+  .z-list .list1 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .z-list .list1 .y-img {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .l-xing .l-maps {
+    flex-direction: column;
+  }
+
+  .l-xing .l-maps img {
+    margin-top: 0;
+    height: 300px;
+  }
+
+  .p-list>ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .l-mei ul {
+    grid-template-columns: 1fr;
+  }
+
+  .l-mei ul li img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .p-list>ul {
+    grid-template-columns: 1fr;
+  }
+
+  .p-list>ul li img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .l-mei ul li img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .p-list>ul li img {
+    width: 120px;
+    height: 120px;
+  }
+}
